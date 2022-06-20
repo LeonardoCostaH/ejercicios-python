@@ -9,5 +9,6 @@ def mostrar_lista(lista):
         print(f"Yo estudio {i}")
 nueva_lista = []
 while True:
-    ejercicio_1.asignaturas_curso(nueva_lista)
+    cual_asignatura = input(f"escriba tus asignaturas para almacenarlas: \n")
+    ejercicio_1.asignaturas_curso(cual_asignatura,nueva_lista)
     mostrar_lista(nueva_lista)
