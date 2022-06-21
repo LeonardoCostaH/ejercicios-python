@@ -11,10 +11,6 @@ def asignaturas_nota(nota,lista):
     lista.append(nota)
     return nota
 
-def junta_nota(lista_asignatura, lista_nota, lista_mista):
-    lista_mista = zip(lista_asignatura,lista_nota)
-    return lista_mista
-
 def mostra_nota(lista_mista):
     for asignatura, nota in lista_mista:
         print(f"La nota en {asignatura} es {nota}")
@@ -22,11 +18,11 @@ def mostra_nota(lista_mista):
 while True:
     cual_asignatura = input(f"escriba tus asignaturas para almacenarlas: \n")
     if cual_asignatura == "x":
-        junta_nota(lista_asignaturas, lista_notas, lista_mista)
+        lista_mista = zip(lista_asignaturas,lista_notas)
         mostra_nota(lista_mista)
         break
     else:
         cual_nota = input(f"Cual es tu nota en {cual_asignatura}: \n")
         ejercicio_1.asignaturas_curso(cual_asignatura,lista_asignaturas)
         asignaturas_nota(cual_nota,lista_notas)
-        print(lista_mista)
+        print(lista_asignaturas,lista_notas)
