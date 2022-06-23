@@ -21,5 +21,5 @@ while True:
     else:
         ejercicio_1.asignaturas_curso(asignaturas, lista_asignaturas)
         notas = int(input(f"Cual es tu nota en {asignaturas}: \n"))
-        ejercicio_3.cual_nota(notas,lista_notas)
+        ejercicio_3.asignaturas_nota(notas,lista_notas)
         print(asignaturas,notas)

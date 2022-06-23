@@ -19,7 +19,7 @@ def mostra_nota(lista_mista, nota_maxima=0):
     else:
         for asignatura, nota in lista_mista:
             print(f"La nota en {asignatura} es {nota}")
-if __name__ != "__main__":
+if __name__ == "__main__":
     while True:
         cual_asignatura = input(f"escriba tus asignaturas para almacenarlas: \n")
         if cual_asignatura == "x":
