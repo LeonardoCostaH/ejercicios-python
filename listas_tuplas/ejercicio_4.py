@@ -3,14 +3,11 @@ primitiva, los almacene en una lista y los muestre por pantalla ordenados de men
 
 numeros_loteria = []
 
-def numero_loteria(lista,numero):
-    return lista.append(numero)
-
 n = 0
 while n < 5:
     n+=1
     numero = input(f"Cuales son los numeros ganadores de la lotería? \n")
-    numero_loteria(numeros_loteria,numero)
+    numeros_loteria.append(numero)
 else:
     numeros_loteria.sort()
     print(str(numeros_loteria))
