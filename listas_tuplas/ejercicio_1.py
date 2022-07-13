@@ -2,16 +2,8 @@
 Química, Historia y Lengua) en una lista y la muestre por pantalla."""
 
 
-def asignaturas_curso(asignatura,lista):
+lista = []
+while True:
+    asignatura = input(f"Cual asignatura quieres almacenar?\n")
     lista.append(asignatura)
-    return asignatura
-
- 
- 
-if __name__ == "__main__":
-        
-    lista = []
-    while True:
-        poner_asignatura = input(f"escriba tus asignaturas para almacenarlas: \n")
-        asignaturas_curso(poner_asignatura,lista)
-        print(lista)
+    print(lista)
