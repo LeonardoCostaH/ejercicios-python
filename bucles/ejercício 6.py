@@ -7,9 +7,10 @@ triángulo rectángulo como el de más abajo, de altura el número introducito.
 ****
 """
 
-numero_entero = int(input("informe um número inteiro: "))
-arbol = "*"
-for i in range(numero_entero):
-    print(arbol * i)
-
-
+entero = input("escriba un numero entero: ")
+if not entero.isdigit():
+    print("Ese no es un numero entero! ")
+else:
+    entero = int(entero)
+    for i in range(entero+1):
+        print(i*"*")
