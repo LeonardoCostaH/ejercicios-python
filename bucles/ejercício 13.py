@@ -2,6 +2,11 @@
 escribir un programa que muestre el eco de todo lo que el usuario introduzca
 hasta que el usuario escriba "salir" que terminará.
 """
+eco = ""
+while eco != "salir":
+    eco = input("escriba algo: \n")
+    if eco != "salir":
+        print(eco, eco)
 
 """
 eco = input("introduzca una palabra o texto: ")
@@ -17,8 +22,8 @@ while palabra != salir:
     palabra = input(f"{palabra}")
     """
 
-while True:
+"""while True:
     frase = input("introduce algo: ")
     if frase == "salir":
         break
-    print(frase)
+    print(frase)"""
