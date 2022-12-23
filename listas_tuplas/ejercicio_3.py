@@ -4,6 +4,16 @@ y después las muestre por pantalla con el mensaje En <asignatura> has sacado <n
 es cada una des las asignaturas de la lista y <nota> cada una de las correspondientes notas introducidas 
 por el usuario."""
 
+asignaturas = []
+notas = []
+while True:
+    asignatura = input("Cual asignatura quieres almacenar? \n")
+    nota = input("Cual nota ha sacado en esa asignatura? \n")
+    asignaturas.append(asignatura)
+    notas.append(nota)
+    for n, i in enumerate(asignaturas):
+        print(f"En {i} has sacado {notas[n]}")
+
 
 asignaturas = []
 notas = []
