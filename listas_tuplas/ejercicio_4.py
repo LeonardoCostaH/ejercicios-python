@@ -2,12 +2,11 @@
 primitiva, los almacene en una lista y los muestre por pantalla ordenados de menor a mayor."""
 
 numeros_loteria = []
+contador = 0
+while contador < 5:
+    numeros_ganadores = input("Cuales son los numeros ganadores de la lotería primitiva? \n")
+    numeros_loteria.append(numeros_ganadores)
+    contador += 1
+numeros_loteria.sort()
+print(numeros_loteria)
 
-n = 0
-while n < 5:
-    n+=1
-    numero = input(f"Cuales son los numeros ganadores de la lotería? \n")
-    numeros_loteria.append(numero)
-else:
-    numeros_loteria.sort()
-    print(str(numeros_loteria))
