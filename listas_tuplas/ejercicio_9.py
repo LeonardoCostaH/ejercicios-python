@@ -3,4 +3,7 @@ veces que contiene cada vocal."""
 
 
 palabra = input("escriba una palabra: \n")
-vocal = []
+vocal = ["a","e","i","o","u"]
+for i in vocal:
+    c_vocal = palabra.count(i)
+    print(f"En la palabra {palabra} aparece {c_vocal} veces la vocal {i}")
