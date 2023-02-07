@@ -2,7 +2,7 @@
 
 
 def saludo(nombre):
-    print(f"Hola {nombre}")
+    print(f"¡Hola {nombre}!")
     return
 
 saludo("Leo")
