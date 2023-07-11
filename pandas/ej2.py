@@ -25,4 +25,4 @@ class DiccionarioNotas:
 dic_nota = DiccionarioNotas()
 dic_nota.informar_notas()
 print(dic_nota.serie_notas())
-print(dic_nota.informe_datos())
+print(dic_nota.informe_datos()) 
